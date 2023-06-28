@@ -1,0 +1,110 @@
+.header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    background-color: rgb(0, 0, 0);
+}
+.logo img{
+    width: 4rem;
+    
+}
+.btn-mobile-menu{
+    background-color: black;
+    display: none;
+    color: white;
+    border: none;
+}
+.navbar-nav{
+    background-color: rgba(0, 0, 0, 0.818);
+}
+#navbar-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+.navbar-li{
+    margin: 0 6px;
+
+}
+.navbar-search{
+    background-color: black;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-search{
+    background-color: black;
+    height: 15px;
+    color: white;
+    border: none;
+}
+#navbar-random{
+    background-color: black;
+    border: none;
+}
+#navbar-random img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+
+}
+.navbar-button{
+    background-color: black;
+    width: 60px;
+    color: white;
+    border: none;
+}
+@media screen and (max-width: 480px){
+    .btn-mobile-menu{
+        display: flex;
+    }
+    .btn-mobile-x{
+        display: flex;
+    }
+    .header{
+        padding: 0;
+        height: 60%;
+        justify-content: space-evenly;
+    }
+    .navbar-nav {
+        width: 70%;
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav.isActive{
+        display: inline-block;
+        position: fixed;
+        height: 7.6rem;
+        margin-top: 9.5rem;
+    }
+    #navbar-ul{
+        flex-direction: column;
+        display: flex;
+    }
+    .navbar-li{
+        list-style: none;
+        margin: 4px;
+    }
+    .navbar-search input{
+        width: 90px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    .navbar-button{
+        font-size: 12px;
+    }
+
+}  
