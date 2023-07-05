@@ -1,4 +1,9 @@
-import Navbar from './components/homeview/Header'
+import 'primereact/resources/themes/arya-orange/theme.css';
+import "primereact/resources/primereact.min.css"; 
+import 'primeicons/primeicons.css';
+import NavBar from './components/home/Header'
+import Getupcoming from './components/movies/Upcoming'
+// import Hola from './components/home/carrusel'
 import './App.css'
 
 function App() {
@@ -7,7 +12,9 @@ function App() {
   return (
     <>
     <div className="prueba">
-      <Navbar/>
+      <NavBar/>
+      {/* <Hola/> */}
+      <Getupcoming/>
     </div>
     </>
   )
