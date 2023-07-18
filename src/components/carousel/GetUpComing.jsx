@@ -5,7 +5,7 @@ import api from "../../api/api";
 import styles from './getUpComing.module.css'
 
 function GetUpComing() {
-    const apiImg = api.dataApi.baseUrlw500;
+    // const apiImg = api.dataApi.baseUrlw500;
     const url ="https://api.themoviedb.org/3/movie/upcoming?language=es-ES&page=1";
     const [upComing, setUpComing] = useState([]);
 
@@ -20,10 +20,9 @@ function GetUpComing() {
 
     const imgCarousel = upComing.map((item) => {
             const pathImage = item.poster_path;
-            const image = apiImg + pathImage;
+            const image = api.dataApi.baseUrlw200 + pathImage;
             const title = item.title;
             const releaseDate = item.release_date;
-            console.log(item)
             return ({img: image, title:title, date: releaseDate})
         });
     
@@ -43,7 +42,7 @@ function GetUpComing() {
                 </div>
                 <div className={styles.lCarousel}>
                     <Galleria value={imgCarousel} responsiveOptions={carouselOptions} numVisible={6} circular style={{ maxWidth: '100%' }}
-                        thumbnail={itemTemplate} autoPlay transitionInterval={99999999999999}/>
+                        thumbnail={itemTemplate} autoPlay transitionInterval={3000}/>
                 </div>
             </div>
         )
