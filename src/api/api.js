@@ -1,6 +1,6 @@
 const dataApi = {
     baseUrl:'https://api.themoviedb.org /3/',
-    baseUrlw500:'https://image.tmdb.org/t/p/w500/',
+    baseUrlw200:'https://image.tmdb.org/t/p/w200/',
 }
 const options = {
     method: 'GET',
