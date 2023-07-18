@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.titleCarousel{
+    margin-left: 20px;
+}
+.lCarousel{
+    padding: 10px;
+}
+.imgCarousel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.dateCarousel{
+    margin: 13px;
+    width: 7rem;
+    font-size: 1rem;
+    border: solid 1px;
+    border-radius: 10px;
+    text-align: center;
+}

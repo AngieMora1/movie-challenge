@@ -31,7 +31,7 @@ function GetUpComing() {
         return (
             <div className={styles.imgCarousel}>
                 <img src={item.img} alt={item.title} style={{ width: '100%'}} />
-                <div className={styles.dateCarousel}><h6>Estreno: {item.date}</h6></div>
+                <div className={styles.dateCarousel}>Estreno: {item.date}</div>
             </div>
             )
     }
@@ -42,8 +42,8 @@ function GetUpComing() {
                     <h3> Próximos estrenos en cines</h3>
                 </div>
                 <div className={styles.lCarousel}>
-                    <Galleria value={imgCarousel} responsiveOptions={carouselOptions} numVisible={7} circular style={{ maxWidth: '1200px' }}
-                        thumbnail={itemTemplate} autoPlay transitionInterval={3000}/>
+                    <Galleria value={imgCarousel} responsiveOptions={carouselOptions} numVisible={6} circular style={{ maxWidth: '100%' }}
+                        thumbnail={itemTemplate} autoPlay transitionInterval={99999999999999}/>
                 </div>
             </div>
         )
